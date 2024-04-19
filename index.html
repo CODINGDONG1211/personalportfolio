@@ -1,103 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pravee Ram</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
 </head>
+
 <body>
     <header class="header">
-        <a href="#" class="logo"> Portfolio</a>
+        <a href="#" class="logo"> Praveen Ram<span class="pulse underscore"><b>_</b></span></a>
 
         <nav class="navbar">
             <a href="#home" style="--i:1">Home</a>
             <a href="#education" style="--i:2">Education</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#skills" style="--i:3">Skill</a>
+            <!-- <a href="#" style="--i:4">Portfolio</a> -->
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    <section class="home" id="home">
+    <section class="home " id="home">
         <div class="home-content">
             <h3>Hello,It's Me</h3>
             <h1>Praveen Ram</h1>
             <h3>And I'am a <span class="text"></span></h3>
-            <p>I am a web developer with extensiver experience for over 3 years
-                <br> expertise it to create website design ,frontend design ,and many more ....
+            <p>I am a passionate college student who finds joy in exploring a wide array of interests. <br>Whether it's diving into the depths of literature, unraveling the mysteries of science, or getting lost in the world of art, I'm always eager to learn and experience new things.
             </p>
             <div class="home-sci">
-                    <a href="#" style="--i:8"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" style="--i:9"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" style="--i:10"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="#" style="--i:11"><i class='bx bxl-linkedin-square' ></i></a>
+                 <a href="https://www.facebook.com/spraveen.ram.3" style="--i:8"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/praveen_ram_1509/" style="--i:9"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B919952931499&text&type=phone_number&app_absent=0" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-ram-8ba149211/" style="--i:11"><i class='bx bxl-linkedin-square'></i></a>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
-            </div>
+            <a href="#contact" class="btn-box">Let's talk</a>
+        </div>
 
-            <div class="home-img">
-                <img src="./IMG_20230726_232952.jpg" alt="">
-            </div>
+        <dwiv class="home-img">
+            <img src="./img.jpg" alt="">
+        </div>
     </section>
 
-    <section style="background-color: black" class="education" id="education">
+    <section style="background-color: var(--color5)" class="education" id="education">
         <h2 class="heading">Education</h2>
 
-        <div class="timeline-items appear">
+        <div class="timeline-items appear"  data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1250">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                    <h3>high schoool</h3>
-                    <p>loren ipsum solor sit amet loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit ametloren ipsum solor sit amet
+                <div class="timeline-date">2022-2026</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>Currently, I am pursuing Computer Science Engineering (CSE) at Vellore Institute of Technology (VIT) in Vellore, maintaining a current CGPA of 9.33. This academic journey in my chosen field has been both challenging and rewarding, allowing me to delve deep into the core concepts of computer science while striving for academic excellence.
                     </p>
-                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                    <h3>high schoool</h3>
-                    <p>loren ipsum solor sit amet loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit ametloren ipsum solor sit amet
+                <div class="timeline-date">2020-2022</div>
+                <div class="timeline-content">
+                    <h3>High schoool</h3>
+                    <p>I successfully completed my high school education, including the 12th board examination, at Maharishi Vidya Mandir in Sriperambadur, achieving 93% overall. This pivotal phase of my education was marked by rigorous academic pursuits and a commitment to excellence, laying a solid foundation for my future endeavors.
+
+
                     </p>
-                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                    <h3>high schoool</h3>
-                    <p>loren ipsum solor sit amet loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit amet
-                        loren ipsum solor sit ametloren ipsum solor sit amet
+                <div class="timeline-date">2007-2020</div>
+                <div class="timeline-content">
+                    <h3>Primary School</h3>
+                    <p>I completed my primary schooling, culminating in the 10th board examination, at Dr. Kalyanasundaram Memorial School in Kumbakonam, achieving a commendable 95.6% overall percentage. 
                     </p>
-                    </div>
+                </div>
             </div>
         </div>
 
-        
+
 
     </section>
 
 
-    
-    
+    <section id="skills" >
+        <h2 class="skills-heading">My Skills 💪</h2>
+        <div class="skills " data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1250" >
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">FRONTEND</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">BACKEND</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">DSA</button>
+            </div>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="left">
+            <div id="London" class="tabcontent">
+
+                <div class="frontend">
+                    <div class="grid-item">
+                        <img src="./assets/html.svg" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="grid-item">
+                            <img src="./assets/css.svg" alt="CSS">
+                            <p>CSS</p>
+                    </div>
+                    <div class="grid-item"><img src="./assets/bootstrap.svg" alt="Bootstrap">
+                        <p>BOOTSTRAP</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="./assets/js.svg" alt="JavaScript">
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="grid-item btm"><img src="./assets/react.svg" alt="React">
+                        <p>REACT.JS</p>
+                    </div>
+                    <div class="grid-item btm1"><img src="./assets/jquery-icon.svg" alt="">
+                        <p>JQUERY</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+
+                <div class="backend " w3>
+                    <div class="grid-item">
+                        <img src="./assets/node.svg" alt="">
+                        <p>NODE JS</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="./assets/express.svg" alt="">
+                        <p>EXPRESS JS</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/mongodb.svg" alt="">
+                        <p>MANGODB</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <div class="dsa ">
+                    <div class="grid-item">
+                        <img src="./assets/python.svg" alt="">
+                        <p>PYTHON</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="./assets/cpp.svg" alt="">
+                        <p>C++</p>
+                    </div>
+                
+                    <div class="grid-item">
+                        <img src="./assets/java.svg" alt="">
+                        <p>JAVA</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact"  id="contact" >
+        <div class="container" >
+            <div class="left" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1250">
                 <div class="form-wrapper">
                     <div class="contact-heading">
                         <h1>Let's work together<span>.</span></h1>
@@ -109,30 +189,30 @@
                         <div class="input-wrap">
                             <input type="text" autocomplete="off" class="contact-info" name="fname" required>
                             <label for="fname">First name</label>
-                            <i class='icon bx bxs-user-detail' ></i>
+                            <i class='icon bx bxs-user-detail'></i>
                         </div>
 
                         <div class="input-wrap">
                             <input type="text" autocomplete="off" class="contact-info" name="lname" required>
                             <label for="lname">Last name</label>
-                            <i class='icon bx bxs-user-detail' ></i>
+                            <i class='icon bx bxs-user-detail'></i>
                         </div>
 
                         <div class="input-wrap w-100">
                             <input type="text" autocomplete="off" class="contact-info" name="email" required>
                             <label for="email">Email</label>
-                            <i class='icon bx bxs-envelope' ></i>
+                            <i class='icon bx bxs-envelope'></i>
                         </div>
 
                         <div class="input-wrap textarea w-100">
                             <textarea name="message" autocomplete="off" class="contact-info"></textarea>
                             <label for="message">Message</label>
-                            <i class='icon bx bx-message-alt-detail' ></i>
+                            <i class='icon bx bx-message-alt-detail'></i>
                         </div>
 
                         <div class="contact-buttons w-100">
                             <button class="btn upload">
-                                <span><i class='bx bx-link' ></i></span>
+                                <span><i class='bx bx-link'></i></span>
                                 <input type="file" name="attachement">
                             </button>
                             <input type="submit" value="Send message" class="btn">
@@ -143,19 +223,51 @@
             <div class="right">
                 <div class="image-wrapper">
                     <img src="./100730-AbstractBlueWavesVectorBackground.jpg" alt="" class="img">
-                    <div class="wave-wrap" >
+                    <div class="wave-wrap">
                         <svg class="wave" viewBox="0 0 783 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="wave" d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z" fill="#D9D9D9" />
-                            </svg>
+                            <path id="wave"
+                                d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1 1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698 274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282C185.043 1063.17 281.908 1196.74 236.705 1356.18Z"
+                                fill="#D9D9D9" />
+                        </svg>
                     </div>
                 </div>
-                
-               
+
+
             </div>
         </div>
     </section>
 
 
+    <section>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/spraveen.ram.3" style="--i:8"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/praveen_ram_1509/" style="--i:9"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B919952931499&text&type=phone_number&app_absent=0" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-ram-8ba149211/" style="--i:11"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul><li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li> 
+                        <li><a href="#contact">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">Praveen Ram</span></p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./main.js"></script>
 </body>
+
 </html>
