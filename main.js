@@ -77,3 +77,53 @@ function openCity(evt, cityName) {
 }
 
 
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop + 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*="' + id + '"]').classList.add('active');
+            });
+        }
+    });
+};
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
+
+
+// window.addEventListener('resize', adjustColumns);
+
+// function adjustColumns() {
+//   const screenWidth = window.innerWidth;
+//   const gridItems = document.querySelectorAll('.grid-item');
+//   let numColumns;
+
+//   if (screenWidth < 900) {
+//     numColumns = 2;
+//   } else {
+//     // Default to 4 columns
+//     numColumns = 4;
+//   }
+
+//   const columnWidth = (100 / numColumns) - 20; // 20px gap between columns
+//   gridItems.forEach(item => {
+//     item.style.flex = `1 1 calc(${columnWidth}% - 20px)`;
+//     item.style.maxWidth = `calc(${columnWidth}% - 20px)`;
+//   });
+// }
+
+// // Initial call to adjustColumns function
+// adjustColumns();
